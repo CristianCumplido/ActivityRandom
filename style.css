@@ -32,11 +32,11 @@ body {
   
 }
 
-.icon{
+.header__icon{
     max-width: 100%; 
 }
 @media screen and (max-width: 768px) {
-    .icon{
+    .header__icon{
         width: 3.125rem;
   height: 3.125rem;
   object-fit: contain;
@@ -45,7 +45,7 @@ body {
     
 }
 @media screen and (max-width: 480px) {
-    .icon{
+    .header__icon{
         width: 3.125rem;
   height: 3.125rem;
   object-fit: contain;
@@ -54,10 +54,10 @@ body {
     
 }
 
-.titleHeader {
+.header__titleHeader {
     font-size: 250%;
 }
-main {
+.main {
   background-color: rgb(91, 206, 235);
   border-left: rgb(55, 138, 233) 1.5px solid;
   border-right: rgb(55, 138, 233) 1.5px solid;
@@ -77,14 +77,14 @@ main {
   border-bottom: gray 1.5px solid;
 }
 
-.container_left {
+.main__container_left {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.container_rigth {
+.main_container_rigth {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,7 +97,7 @@ main {
   font-size: 20px;
 }
 
-.cardTitle {
+.main__cardTitle {
   width: 100%;
   background-color: white;
   display: flex;
@@ -108,21 +108,21 @@ main {
   margin-top: 1rem;
 }
 
-.iconWater {
+.main__iconWater {
   height: 7rem;
   border-radius: 15px;
   cursor: pointer;
   padding: 0.5rem;
 }
 
-.titleName {
+.main__titleName {
   color: black;
   margin-left: 0.3rem;
   margin-right: 1rem;
   font-size: 2.5rem;
 }
 
-.imagePokemon {
+.main__imagePokemon {
   position: relative;
   top: 1.0rem;
  
@@ -166,14 +166,14 @@ tr:nth-child(even) {
   color: #f0f0f0;
 }
 
-.titleFooter {
+.footer__title-footer {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Ubuntu", sans-serif;
 }
 
-.buttomPK {
+.footer__footer-buttomspokemon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,14 +184,14 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
-.buttomPK:hover {
+.footer__footer-buttomspokemon:hover {
   background-color: gray;
   border: black 2px solid;
   transform: scale(1.1);
 
 }
 
-.buttomImgPK:hover {
+.footer__footer-buttomspokemon-img:hover {
   transform: rotateY(360deg);
   position: relative;
   color: #262626;
@@ -199,12 +199,12 @@ tr:nth-child(even) {
   z-index: 3;
 }
 
-.buttomImgPK {
+.footer__footer-buttomspokemon-img {
   height: 5rem;
   width: 5rem;
 }
 
-.footerButtoms {
+.footer__footer-buttoms {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -212,7 +212,7 @@ tr:nth-child(even) {
   background-color: white;
 }
 
-.containerFooter {
+.footer__container-foote {
   align-items: center;
   object-fit: scale-down;
   justify-content: space-between;
@@ -224,18 +224,18 @@ tr:nth-child(even) {
     margin: 0 auto;
   }
 
-  .header, .footer, main {
+  .header, .footer, .main {
     grid-column: 1 / -1;
     clear: both;
   }
 
-  .container {
+  .main_container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 
-  .container_rigth {
+  .main_container_rigth {
     width: 30%;
   }
 
@@ -257,7 +257,7 @@ tr:nth-child(even) {
     justify-content: space-between;
   }
 
-  .footerButtoms {
+  .footer__footer-buttoms {
     display: flex;
   }
 }
