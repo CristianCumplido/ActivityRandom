@@ -246,11 +246,11 @@ tr:nth-child(even) {
     justify-content: space-evenly;
   }
 
-  .titleFooter {
+  .footer__title-footer {
     margin-right: 5rem;
   }
 
-  .containerFooter {
+  .footer__container-footer {
     display: flex;
     align-items: center;
     object-fit: scale-down;
